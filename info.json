@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "6f5806fcde9172619f1e5368b05210c70c99bb66",
+    "author": "Carl Boettiger <cboettig@gmail.com>",
+    "time": "2021-06-07 17:37:04",
+    "files": 4,
+    "merge": true,
+    "message": "Merge pull request #329 from laijasmine/master\n\nalign `set_taxonomicCoverage` behaviour with EML"
+  },
+  "remote": "https://github.com/ropensci/EML",
+  "pkg": "EML"
+}
