@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "b7871cca2b996a33aa1f534e8446f0730e706d4d",
+    "author": "Carl Boettiger <cboettig@gmail.com>",
+    "time": "2022-06-06 22:10:05",
+    "files": 2,
+    "merge": true,
+    "message": "Merge pull request #346 from ropensci/i345-responsiblePartyOrganizations\n\nAllow set_responsibleParty to create organizations"
+  },
+  "repo": "https://github.com/ropensci/EML",
+  "pkg": "EML"
+}
