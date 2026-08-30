@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "c948e9c756a68c23dbc05638147a1fced09a1d6f",
+    "author": "Carl Boettiger <cboettig@berkeley.edu>",
+    "time": "2025-07-28T04:31:28Z",
+    "files": 3,
+    "merge": false,
+    "message": "url check\n"
+  },
+  "repo": "https://github.com/ropensci/EML",
+  "pkg": "EML",
+  "time": "2026-08-30T07:15:55Z"
+}

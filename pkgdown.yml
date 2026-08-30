@@ -1,0 +1,10 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  creating-EML: creating-EML.html
+  working-with-units: working-with-units.html
+last_built: 2026-08-30T07:15Z
+urls:
+  reference: https://docs.ropensci.org/EML/reference
+  article: https://docs.ropensci.org/EML/articles
