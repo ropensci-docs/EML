@@ -1,0 +1,98 @@
+# set_attributes
+
+set_attributes
+
+## Usage
+
+``` r
+set_attributes(
+  attributes,
+  factors = NULL,
+  col_classes = NULL,
+  missingValues = NULL
+)
+```
+
+## Arguments
+
+- attributes:
+
+  a joined table of all attribute metadata
+
+- factors:
+
+  a table with factor code-definition pairs; see details
+
+- col_classes:
+
+  optional, list of R column classes ('ordered', 'numeric', 'factor',
+  'Date', or 'character', case sensitive) will let the function infer
+  missing 'domain' and 'measurementScale' values for attributes column.
+  Should be in same order as attributeNames in the attributes table, or
+  be a named list with names corresponding to attributeNames in the
+  attributes table.
+
+- missingValues:
+
+  optional, a table with missing value code-deinition pairs; see details
+
+## Value
+
+an eml "attributeList" object
+
+## Details
+
+The attributes data frame must use only the recognized column headers
+shown here. The attributes data frame must contain columns for required
+metadata. These are:
+
+**For all data:**
+
+- attributeName (required, free text field)
+
+- attributeDefinition (required, free text field)
+
+- measurementScale (required, "nominal", "ordinal", "ratio", "interval",
+  or "dateTime", case sensitive) but it can be inferred from
+  col_classes.
+
+- domain (required, "numericDomain", "textDomain", "enumeratedDomain",
+  or "dateTimeDomain", case sensitive) but it can be inferred from
+  col_classes.
+
+**For numeric (ratio or interval) data:**
+
+- unit (required). Unitless values should use "dimensionless" as the
+  unit.
+
+**For character (textDomain) data:**
+
+- definition (required)
+
+**For dateTime data:**
+
+- formatString (required)
+
+Other optional allowed columns in the attributes table are: source,
+pattern, precision, numberType, missingValueCode,
+missingValueCodeExplanation, attributeLabel, storageType, minimum,
+maximum
+
+The **factors** data frame, required for attributes in an enumerated
+domain, must use only the following recognized column headers:
+
+- attributeName (required)
+
+- code (required)
+
+- definition (required)
+
+The **missingValues** data frame, optional, can be used in the case that
+multiple missing value codes need to be set for the same attribute. This
+table must contain the following recognized column headers.
+
+- attributeName (required)
+
+- code (required)
+
+- definition (required)
